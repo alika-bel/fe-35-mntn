@@ -21,8 +21,7 @@ body {
   background-image: url(../img/hero.webp);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain
-  
+  background-size: contain;
 }
 .container {
   max-width: 1507px;
@@ -39,6 +38,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   font-family: var(--font-logo);
   font-weight: 400;
@@ -46,6 +46,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.01em;
   font-size: 32px;
+}
+.nav-link:hover,
+.action-link:hover {
+  opacity: 0.8;
 }
 .nav-list {
   display: flex;
@@ -105,6 +109,9 @@ body {
   align-items: center;
   gap: 9px;
 }
+.hero-link:hover {
+  opacity: 0.8;
+}
 .hero-link::after {
   content: "";
   width: 16px;
@@ -127,11 +134,11 @@ body {
 .travel-item:nth-child(even) .step-photo {
   order: -1;
 }
-.travel-item:nth-child(2) .step-body{
-    background-image: url(../img/Eq2.svg);
+.travel-item:nth-child(2) .step-body {
+  background-image: url(../img/Eq2.svg);
 }
-.travel-item:nth-child(3) .step-body{
-    background-image: url(../img/Eq3.svg);
+.travel-item:nth-child(3) .step-body {
+  background-image: url(../img/Eq3.svg);
 }
 .travel-step {
   display: flex;
@@ -158,11 +165,11 @@ body {
   align-items: center;
   gap: 24px;
 }
-.step-text::before{
-    content: "";
-    height: 2px;
-    width: 72px;
-    background-color: var(--accent-color);
+.step-text::before {
+  content: "";
+  height: 2px;
+  width: 72px;
+  background-color: var(--accent-color);
 }
 .step-title {
   max-width: 555px;
@@ -178,14 +185,17 @@ body {
   align-items: center;
   gap: 10px;
 }
-.step-link::after{
-content: "";
-height: 16px;
-width: 24px;
-background-image: url(../img/arrow_right.svg);
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+.step-link:hover {
+  opacity: 0.8;
+}
+.step-link::after {
+  content: "";
+  height: 16px;
+  width: 24px;
+  background-image: url(../img/arrow_right.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /* =================Footer===================== */
 .footer {
@@ -222,4 +232,8 @@ background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.blog-item:hover,
+.mntn-item:hover {
+  opacity: 0.8;
 }
