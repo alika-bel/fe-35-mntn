@@ -1,0 +1,225 @@
+:root {
+  /* Кольори */
+
+  --primary-text-color: #ffffff;
+  --background-color: #0b1d26;
+  --accent-color: #fbd784;
+
+  /* Шрифти */
+  --font-primary: "Chivo", sans-serif;
+  --font-logo: "Chonburi", serif;
+  --font-title: "Cinzel", serif;
+}
+/* =======================Global================================= */
+body {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.78;
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+  background-image: url(../img/hero.webp);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain
+  
+}
+.container {
+  max-width: 1507px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+/* ============================Header======================= */
+.header {
+  padding-top: 67px;
+}
+.header-container {
+  max-width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: var(--font-logo);
+  font-weight: 400;
+  line-height: 1.19;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-size: 32px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+.action-link {
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1.18;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.action-link::before {
+  content: "";
+  height: 24px;
+  width: 24px;
+  background-image: url(../img/cart.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* =========================Hero================= */
+.hero {
+  margin-top: 200px;
+  margin-bottom: 745px;
+}
+.hero-container {
+  max-width: 950px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.hero-subtitle {
+  line-height: 1.17;
+  letter-spacing: 0.33em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.hero-subtitle::before {
+  content: "";
+  height: 2px;
+  width: 72px;
+  background-color: var(--accent-color);
+}
+.hero-title {
+  font-family: var(--font-title);
+  line-height: 1.14;
+  font-size: 88px;
+  font-weight: 400;
+}
+.hero-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.hero-link::after {
+  content: "";
+  width: 16px;
+  height: 24px;
+  background-image: url(../img/arrow_down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* =======================Travel================= */
+.travel {
+  padding-bottom: 200px;
+}
+
+.travel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.travel-item:nth-child(even) .step-photo {
+  order: -1;
+}
+.travel-item:nth-child(2) .step-body{
+    background-image: url(../img/Eq2.svg);
+}
+.travel-item:nth-child(3) .step-body{
+    background-image: url(../img/Eq3.svg);
+}
+.travel-step {
+  display: flex;
+  gap: 115px;
+  align-items: center;
+}
+.step-body {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding-left: 150px;
+  background-image: url(../img/Eq1.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-top: 50px;
+}
+
+.step-text {
+  line-height: 1.17;
+  letter-spacing: 0.33em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.step-text::before{
+    content: "";
+    height: 2px;
+    width: 72px;
+    background-color: var(--accent-color);
+}
+.step-title {
+  max-width: 555px;
+  font-family: var(--font-title);
+  line-height: 1.34;
+  font-size: 64px;
+  font-weight: 400;
+}
+.step-link {
+  font-weight: 900;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.step-link::after{
+content: "";
+height: 16px;
+width: 24px;
+background-image: url(../img/arrow_right.svg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+/* =================Footer===================== */
+.footer {
+  padding-bottom: 120px;
+}
+.footer-container {
+  display: flex;
+  gap: 200px;
+}
+.footer-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.slogan {
+  flex-grow: 1;
+  font-weight: 900;
+  max-width: 303px;
+}
+.privacy {
+  opacity: 0.5;
+}
+.blog-title,
+.mntn-title {
+  margin-bottom: 24px;
+  color: var(--accent-color);
+  font-weight: 900;
+  line-height: 1.33;
+  font-size: 24px;
+}
+.blog-list,
+.mntn-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
